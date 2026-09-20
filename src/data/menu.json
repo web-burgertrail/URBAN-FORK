@@ -1,0 +1,1210 @@
+{
+  "fruitJuices": [
+    {
+      "id": "fj1",
+      "name": "Mosambi Juice",
+      "price": 60,
+      "jumbo": 70,
+      "description": "Fresh sweet lime juice, cold-pressed and naturally refreshing.",
+      "image": "https://images.unsplash.com/photo-1613478223719-2ab802602423?w=400&q=80",
+      "badge": "Bestseller",
+      "rating": "4.6",
+      "reviews": 312
+    },
+    {
+      "id": "fj2",
+      "name": "Pine Apple Juice",
+      "price": 60,
+      "jumbo": 70,
+      "description": "Freshly blended tropical pineapple — tangy, sweet and invigorating.",
+      "image": "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=400&q=80",
+      "badge": null,
+      "rating": "4.4",
+      "reviews": 198
+    },
+    {
+      "id": "fj3",
+      "name": "Ganga Jamna Juice",
+      "price": 60,
+      "jumbo": 70,
+      "description": "Two-tone blend of Mosambi and Pineapple — our signature special.",
+      "image": "https://images.unsplash.com/photo-1607920592519-bab8f9731f2f?w=400&q=80",
+      "badge": "Special",
+      "rating": "4.7",
+      "reviews": 245
+    },
+    {
+      "id": "fj4",
+      "name": "Apple Juice",
+      "price": 60,
+      "jumbo": 70,
+      "description": "Crisp fresh apple juice — golden, lightly sweet and refreshing.",
+      "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=400&q=80",
+      "badge": null,
+      "rating": "4.4",
+      "reviews": 234
+    },
+    {
+      "id": "fj5",
+      "name": "Mango Juice",
+      "price": 60,
+      "jumbo": 70,
+      "description": "Pure Hyderabadi mango pulp blended fresh — thick, sweet and tropical.",
+      "image": "https://images.unsplash.com/photo-1553531384-cc64ac80f931?w=400&q=80",
+      "badge": "Seasonal",
+      "rating": "4.8",
+      "reviews": 421
+    },
+    {
+      "id": "fj6",
+      "name": "Sapota (Chikku) Juice",
+      "price": 60,
+      "jumbo": 70,
+      "description": "Creamy malt-flavoured chikku blended with chilled milk.",
+      "image": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&q=80",
+      "badge": null,
+      "rating": "4.3",
+      "reviews": 134
+    },
+    {
+      "id": "fj7",
+      "name": "Grapes Juice",
+      "price": 60,
+      "jumbo": 70,
+      "description": "Fresh grape juice — deep purple, naturally sweet and antioxidant-rich.",
+      "image": "https://images.unsplash.com/photo-1423483641154-5411ec9c0ddf?w=400&q=80",
+      "badge": null,
+      "rating": "4.3",
+      "reviews": 178
+    },
+    {
+      "id": "fj8",
+      "name": "Orange Juice",
+      "price": 60,
+      "jumbo": 70,
+      "description": "Freshly squeezed orange juice, vibrant and vitamin C-rich.",
+      "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80",
+      "badge": null,
+      "rating": "4.5",
+      "reviews": 267
+    },
+    {
+      "id": "fj9",
+      "name": "Pomegranate (Anar) Juice",
+      "price": 60,
+      "jumbo": 70,
+      "description": "Deep ruby fresh pomegranate — antioxidant-rich and boldly flavoured.",
+      "image": "https://images.unsplash.com/photo-1615484477778-ca3b77940c25?w=400&q=80",
+      "badge": "Healthy",
+      "rating": "4.6",
+      "reviews": 287
+    },
+    {
+      "id": "fj10",
+      "name": "Watermelon Juice",
+      "price": 60,
+      "jumbo": 70,
+      "description": "Chilled fresh watermelon blended smooth — the ultimate summer coolant.",
+      "image": "https://images.unsplash.com/photo-1543362906-acfc16c67564?w=400&q=80",
+      "badge": "Summer Special",
+      "rating": "4.7",
+      "reviews": 356
+    },
+    {
+      "id": "fj11",
+      "name": "Banana Juice",
+      "price": 60,
+      "jumbo": 70,
+      "description": "Thick and creamy fresh banana blend — naturally sweet and filling.",
+      "image": "https://images.unsplash.com/photo-1528825871115-3581a5387919?w=400&q=80",
+      "badge": null,
+      "rating": "4.2",
+      "reviews": 145
+    },
+    {
+      "id": "fj12",
+      "name": "Cocktail Juice",
+      "price": 60,
+      "jumbo": 70,
+      "description": "A vibrant mix of multiple seasonal fruits blended into one glass.",
+      "image": "https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400&q=80",
+      "badge": null,
+      "rating": "4.4",
+      "reviews": 198
+    },
+    {
+      "id": "fj13",
+      "name": "Muskmelon Juice",
+      "price": 60,
+      "jumbo": 70,
+      "description": "Chilled muskmelon blended smooth — delicate, sweet and cooling.",
+      "image": "https://images.unsplash.com/photo-1478144592103-25e218a04891?w=400&q=80",
+      "badge": null,
+      "rating": "4.3",
+      "reviews": 112
+    },
+    {
+      "id": "fj14",
+      "name": "Papeta (Papaya) Juice",
+      "price": 60,
+      "jumbo": 70,
+      "description": "Fresh papaya blended smooth — mild, sweet and packed with enzymes.",
+      "image": "https://images.unsplash.com/photo-1526318472351-c75fcf070305?w=400&q=80",
+      "badge": null,
+      "rating": "4.2",
+      "reviews": 98
+    },
+    {
+      "id": "fj15",
+      "name": "Green Anjeer Juice",
+      "price": 60,
+      "jumbo": 70,
+      "description": "Fresh green fig juice — earthy, mildly sweet and full of natural goodness.",
+      "image": "https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=400&q=80",
+      "badge": null,
+      "rating": "4.2",
+      "reviews": 89
+    },
+    {
+      "id": "fj16",
+      "name": "Guava (Jaam) Juice",
+      "price": 60,
+      "jumbo": 70,
+      "description": "Fresh guava blended thick — tropical, lightly tart and refreshing.",
+      "image": "https://images.unsplash.com/photo-1536613574538-c6a7e28faf1f?w=400&q=80",
+      "badge": null,
+      "rating": "4.3",
+      "reviews": 134
+    }
+  ],
+  "specialJuices": [
+    {
+      "id": "sj1",
+      "name": "Fruit Punch Juice",
+      "price": 70,
+      "jumbo": 100,
+      "description": "A vibrant mix of seasonal fruits punched together for a tropical burst.",
+      "image": "https://images.unsplash.com/photo-1497534446932-c925b458314e?w=400&q=80",
+      "badge": "Popular",
+      "rating": "4.7",
+      "reviews": 334
+    },
+    {
+      "id": "sj2",
+      "name": "Custard Apple (Sitafal)",
+      "price": 120,
+      "jumbo": 150,
+      "description": "Seasonal custard apple blended into a creamy, indulgent delight.",
+      "image": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400&q=80",
+      "badge": "Seasonal",
+      "rating": "4.5",
+      "reviews": 178
+    },
+    {
+      "id": "sj3",
+      "name": "Avocado Juice",
+      "price": 170,
+      "jumbo": 200,
+      "description": "Creamy fresh avocado with dry fruits — rich, velvety and nutritious.",
+      "image": "https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?w=400&q=80",
+      "badge": "Premium",
+      "rating": "4.5",
+      "reviews": 142
+    },
+    {
+      "id": "sj4",
+      "name": "Dragon Fruit Juice",
+      "price": 100,
+      "jumbo": 150,
+      "description": "Striking pink dragon fruit — visually stunning and deeply nutritious.",
+      "image": "https://images.unsplash.com/photo-1527325678964-54921661f888?w=400&q=80",
+      "badge": "Exotic",
+      "rating": "4.6",
+      "reviews": 221
+    },
+    {
+      "id": "sj5",
+      "name": "Kiwi Juice",
+      "price": 100,
+      "jumbo": 150,
+      "description": "Tangy fresh kiwi juice — zingy, green and absolutely refreshing.",
+      "image": "https://images.unsplash.com/photo-1585059895524-72359e06133a?w=400&q=80",
+      "badge": null,
+      "rating": "4.4",
+      "reviews": 156
+    },
+    {
+      "id": "sj6",
+      "name": "Kiwi Blast",
+      "price": 120,
+      "jumbo": 160,
+      "description": "Double-strength kiwi blend with mint — zingy, bold and intense.",
+      "image": "https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?w=400&q=80",
+      "badge": null,
+      "rating": "4.4",
+      "reviews": 134
+    },
+    {
+      "id": "sj7",
+      "name": "Strawberry Juice",
+      "price": 70,
+      "jumbo": 110,
+      "description": "Fresh strawberries blended into a vibrant, naturally sweet juice.",
+      "image": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=400&q=80",
+      "badge": null,
+      "rating": "4.5",
+      "reviews": 223
+    },
+    {
+      "id": "sj8",
+      "name": "Jamun Juice (Seasonal)",
+      "price": 100,
+      "jumbo": 150,
+      "description": "Indian blackberry juice — deep purple, tart and traditionally beneficial.",
+      "image": "https://images.unsplash.com/photo-1425934398893-310a009a77f9?w=400&q=80",
+      "badge": "Seasonal",
+      "rating": "4.5",
+      "reviews": 189
+    },
+    {
+      "id": "sj9",
+      "name": "Shaidud (Mulberry) Juice",
+      "price": 100,
+      "jumbo": 150,
+      "description": "Fresh mulberry juice — sweet, dark and packed with antioxidants.",
+      "image": "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=400&q=80",
+      "badge": "Seasonal",
+      "rating": "4.4",
+      "reviews": 112
+    },
+    {
+      "id": "sj10",
+      "name": "Dates Juice",
+      "price": 100,
+      "jumbo": 150,
+      "description": "Rich Medjool dates blended smooth — naturally sweet and nourishing.",
+      "image": "https://images.unsplash.com/photo-1562447560-b7b0b1e8a8d7?w=400&q=80",
+      "badge": null,
+      "rating": "4.3",
+      "reviews": 98
+    },
+    {
+      "id": "sj11",
+      "name": "Alubukhara Juice",
+      "price": 100,
+      "jumbo": 130,
+      "description": "Fresh plum juice — tangy, dark and naturally rich in iron.",
+      "image": "https://images.unsplash.com/photo-1498557850523-fd3d118b962e?w=400&q=80",
+      "badge": null,
+      "rating": "4.3",
+      "reviews": 87
+    },
+    {
+      "id": "sj12",
+      "name": "Spl. Fruit Mandi Juice",
+      "price": 120,
+      "jumbo": 150,
+      "description": "Our grand celebration juice — a lavish seasonal fruit mandi in a glass.",
+      "image": "https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?w=400&q=80",
+      "badge": "Chef's Pick",
+      "rating": "4.8",
+      "reviews": 267
+    }
+  ],
+  "dryFruitJuices": [
+    {
+      "id": "df1",
+      "name": "Dry Fruit Juice",
+      "price": 150,
+      "description": "Premium blend of mixed dry fruits — almonds, cashews, pistachios in chilled milk.",
+      "image": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?w=400&q=80",
+      "badge": "Royal Special",
+      "rating": "4.8",
+      "reviews": 287
+    },
+    {
+      "id": "df2",
+      "name": "Badam Juice",
+      "price": 150,
+      "description": "Pure almond milk with saffron and cardamom — the classic Indian health drink.",
+      "image": "https://images.unsplash.com/photo-1508061942289-f7e296b5fe24?w=400&q=80",
+      "badge": "Bestseller",
+      "rating": "4.7",
+      "reviews": 412
+    },
+    {
+      "id": "df3",
+      "name": "Anjeer Juice",
+      "price": 120,
+      "description": "Soaked dried figs blended with milk — silky, naturally sweet and iron-rich.",
+      "image": "https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=400&q=80",
+      "badge": null,
+      "rating": "4.4",
+      "reviews": 134
+    },
+    {
+      "id": "df4",
+      "name": "Jaku Juice",
+      "price": 150,
+      "description": "Special energising dry fruit blend — thick and bursting with natural goodness.",
+      "image": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?w=400&q=80",
+      "badge": null,
+      "rating": "4.3",
+      "reviews": 98
+    },
+    {
+      "id": "df5",
+      "name": "Kaju Anjeer Juice",
+      "price": 150,
+      "description": "Cashew and fig blended with chilled milk — rich, nutty and decadent.",
+      "image": "https://images.unsplash.com/photo-1607631568010-a87245c0daf7?w=400&q=80",
+      "badge": null,
+      "rating": "4.5",
+      "reviews": 156
+    },
+    {
+      "id": "df6",
+      "name": "Badam Anjeer Juice",
+      "price": 150,
+      "description": "Almond and fig blended together — a supremely nourishing combination.",
+      "image": "https://images.unsplash.com/photo-1508061942289-f7e296b5fe24?w=400&q=80",
+      "badge": "Royal",
+      "rating": "4.8",
+      "reviews": 287
+    },
+    {
+      "id": "df7",
+      "name": "Pista Juice",
+      "price": 250,
+      "description": "Premium pistachio milk with cardamom and rose water — luxuriously rich.",
+      "image": "https://images.unsplash.com/photo-1515023115689-589c33041d3c?w=400&q=80",
+      "badge": "Premium",
+      "rating": "4.6",
+      "reviews": 189
+    },
+    {
+      "id": "df8",
+      "name": "Dry Fruit Juice (Small)",
+      "price": 100,
+      "description": "Smaller portion of our premium dry fruit blend — light and nourishing.",
+      "image": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?w=400&q=80",
+      "badge": null,
+      "rating": "4.5",
+      "reviews": 145
+    }
+  ],
+  "vegetableJuices": [
+    {
+      "id": "vj1",
+      "name": "Carrot Juice",
+      "price": 60,
+      "full": 70,
+      "description": "Freshly pressed carrots — naturally sweet, rich in beta-carotene.",
+      "image": "https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=400&q=80",
+      "badge": "Healthy",
+      "rating": "4.5",
+      "reviews": 234
+    },
+    {
+      "id": "vj2",
+      "name": "Beetroot Juice",
+      "price": 60,
+      "full": 70,
+      "description": "Deep red fresh beetroot — earthy, naturally sweet and iron-packed.",
+      "image": "https://images.unsplash.com/photo-1593280359364-9b4e4f5f5a1a?w=400&q=80",
+      "badge": "Healthy",
+      "rating": "4.4",
+      "reviews": 178
+    },
+    {
+      "id": "vj3",
+      "name": "Carrot Beetroot Mix",
+      "price": 60,
+      "full": 70,
+      "description": "The power duo — carrot and beetroot blended for maximum nutrition.",
+      "image": "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=400&q=80",
+      "badge": "Bestseller",
+      "rating": "4.6",
+      "reviews": 267
+    },
+    {
+      "id": "vj4",
+      "name": "Tomato Juice",
+      "price": 50,
+      "full": 60,
+      "description": "Fresh vine tomatoes juiced — tangy, low-calorie and refreshing.",
+      "image": "https://images.unsplash.com/photo-1592134143986-4c10c90a4a06?w=400&q=80",
+      "badge": null,
+      "rating": "4.2",
+      "reviews": 134
+    },
+    {
+      "id": "vj5",
+      "name": "Kheer (Cucumber) Juice",
+      "price": 50,
+      "full": 60,
+      "description": "Chilled cucumber juice — crisp, hydrating and supremely cooling.",
+      "image": "https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?w=400&q=80",
+      "badge": "Summer",
+      "rating": "4.3",
+      "reviews": 112
+    },
+    {
+      "id": "vj6",
+      "name": "Veg. Cocktail Juice",
+      "price": 60,
+      "full": 70,
+      "description": "Mixed fresh vegetables blended into a nutritious power drink.",
+      "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80",
+      "badge": null,
+      "rating": "4.3",
+      "reviews": 98
+    },
+    {
+      "id": "vj7",
+      "name": "Karela Juice",
+      "price": 50,
+      "full": 60,
+      "description": "Fresh bitter gourd juice — strong, medicinal and a traditional tonic.",
+      "image": "https://images.unsplash.com/photo-1604170753684-2fd7f95a9c6e?w=400&q=80",
+      "badge": "Medicinal",
+      "rating": "4.1",
+      "reviews": 87
+    },
+    {
+      "id": "vj8",
+      "name": "Pumpkin (Kaddu) Juice",
+      "price": 50,
+      "full": 60,
+      "description": "Fresh pumpkin blended smooth — mild, sweet and rich in vitamins.",
+      "image": "https://images.unsplash.com/photo-1570586437263-ab629fccc818?w=400&q=80",
+      "badge": null,
+      "rating": "4.1",
+      "reviews": 76
+    },
+    {
+      "id": "vj9",
+      "name": "Palak Juice",
+      "price": 50,
+      "full": 60,
+      "description": "Fresh spinach juice — earthy green, iron-rich and deeply nutritious.",
+      "image": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=400&q=80",
+      "badge": null,
+      "rating": "4.0",
+      "reviews": 67
+    }
+  ],
+  "fruitSalads": [
+    {
+      "id": "fs1",
+      "name": "Cut Fruit Bowl",
+      "price": 60,
+      "jumbo": 150,
+      "description": "A generous bowl of freshly cut seasonal fruits — clean, light and delicious.",
+      "image": "https://images.unsplash.com/photo-1564093497595-593b96d80180?w=400&q=80",
+      "badge": null,
+      "rating": "4.3",
+      "reviews": 245
+    },
+    {
+      "id": "fs2",
+      "name": "Normal Fruit Salad",
+      "price": 60,
+      "jumbo": 250,
+      "description": "Mixed fresh fruits with a light honey dressing — colourful and refreshing.",
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80",
+      "badge": null,
+      "rating": "4.4",
+      "reviews": 312
+    },
+    {
+      "id": "fs3",
+      "name": "Malt Fruit Salad (Tin Fruits)",
+      "price": 80,
+      "jumbo": 350,
+      "description": "Seasonal fruits with premium tinned fruits, malt powder and cream.",
+      "image": "https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?w=400&q=80",
+      "badge": "Popular",
+      "rating": "4.6",
+      "reviews": 287
+    },
+    {
+      "id": "fs4",
+      "name": "Fresh Cream Salad",
+      "price": 90,
+      "jumbo": 400,
+      "description": "Fresh seasonal fruits topped with thick whipped cream — indulgent.",
+      "image": "https://images.unsplash.com/photo-1488900128323-21503983a07e?w=400&q=80",
+      "badge": null,
+      "rating": "4.5",
+      "reviews": 198
+    },
+    {
+      "id": "fs5",
+      "name": "Shaldud Malai Salad",
+      "price": 100,
+      "jumbo": 400,
+      "description": "Premium mixed fruit salad topped with thick fresh malai cream.",
+      "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&q=80",
+      "badge": "Bestseller",
+      "rating": "4.7",
+      "reviews": 356
+    },
+    {
+      "id": "fs6",
+      "name": "Afghani Dry Fruit Salad",
+      "price": 150,
+      "jumbo": 700,
+      "description": "Exotic Afghani-style dry fruit salad — premium, indulgent and nourishing.",
+      "image": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?w=400&q=80",
+      "badge": "Premium",
+      "rating": "4.7",
+      "reviews": 198
+    },
+    {
+      "id": "fs7",
+      "name": "Mango Malai",
+      "price": 100,
+      "jumbo": 150,
+      "description": "Fresh mango chunks draped in thick malai cream — the summer salad of dreams.",
+      "image": "https://images.unsplash.com/photo-1553531384-cc64ac80f931?w=400&q=80",
+      "badge": "Summer Fav",
+      "rating": "4.8",
+      "reviews": 421
+    },
+    {
+      "id": "fs8",
+      "name": "Mango Delight",
+      "price": 120,
+      "jumbo": 150,
+      "description": "Layers of fresh mango with cream and dry fruits — a truly royal treat.",
+      "image": "https://images.unsplash.com/photo-1571575173927-f83b85e7c9e8?w=400&q=80",
+      "badge": null,
+      "rating": "4.6",
+      "reviews": 178
+    },
+    {
+      "id": "fs9",
+      "name": "Litchi Malai",
+      "price": 120,
+      "jumbo": 550,
+      "description": "Sweet juicy lychees with fresh cream — fragrant, floral and delightful.",
+      "image": "https://images.unsplash.com/photo-1597528380390-5e9bd8eed284?w=400&q=80",
+      "badge": null,
+      "rating": "4.5",
+      "reviews": 145
+    },
+    {
+      "id": "fs10",
+      "name": "Strawberry Malai",
+      "price": 120,
+      "jumbo": 550,
+      "description": "Fresh strawberries with thick malai — vibrant, sweet-tart and irresistible.",
+      "image": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=400&q=80",
+      "badge": null,
+      "rating": "4.6",
+      "reviews": 189
+    },
+    {
+      "id": "fs11",
+      "name": "Dry Anjeer Malai",
+      "price": 130,
+      "jumbo": 550,
+      "description": "Dried figs soaked and served with rich fresh cream — luxurious.",
+      "image": "https://images.unsplash.com/photo-1562447560-b7b0b1e8a8d7?w=400&q=80",
+      "badge": null,
+      "rating": "4.4",
+      "reviews": 134
+    },
+    {
+      "id": "fs12",
+      "name": "Yemeni Dry Fruit Salad",
+      "price": 200,
+      "jumbo": 800,
+      "description": "An opulent Yemeni-inspired mix of premium dry fruits with fresh fruits.",
+      "image": "https://images.unsplash.com/photo-1508061942289-f7e296b5fe24?w=400&q=80",
+      "badge": "Royal",
+      "rating": "4.9",
+      "reviews": 198
+    },
+    {
+      "id": "fs13",
+      "name": "Custard Salad",
+      "price": 80,
+      "jumbo": 300,
+      "description": "Seasonal fruits layered with smooth vanilla custard — creamy and satisfying.",
+      "image": "https://images.unsplash.com/photo-1488900128323-21503983a07e?w=400&q=80",
+      "badge": null,
+      "rating": "4.5",
+      "reviews": 223
+    },
+    {
+      "id": "fs14",
+      "name": "Green Anjeer Malai",
+      "price": 100,
+      "jumbo": 500,
+      "description": "Fresh green figs with rich malai cream — unique, elegant and refreshing.",
+      "image": "https://images.unsplash.com/photo-1536613574538-c6a7e28faf1f?w=400&q=80",
+      "badge": null,
+      "rating": "4.4",
+      "reviews": 134
+    },
+    {
+      "id": "fs15",
+      "name": "Fruit Mandi (Family)",
+      "price": 350,
+      "description": "Grand family-size platter of seasonal fruits — perfect for sharing.",
+      "image": "https://images.unsplash.com/photo-1519996529931-28324d5a630e?w=400&q=80",
+      "badge": "Family",
+      "rating": "4.8",
+      "reviews": 167
+    },
+    {
+      "id": "fs16",
+      "name": "Dry Fruit Mandi (Family)",
+      "price": 400,
+      "description": "Grand family-size dry fruit platter — a royal spread of premium nuts.",
+      "image": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?w=400&q=80",
+      "badge": "Family",
+      "rating": "4.8",
+      "reviews": 145
+    }
+  ],
+  "milkShakes": [
+    {
+      "id": "ms1",
+      "name": "Strawberry Shake",
+      "price": 60,
+      "jumbo": 120,
+      "description": "Fresh strawberries blended with chilled milk and ice cream — vibrant and creamy.",
+      "image": "https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=400&q=80",
+      "badge": "Popular",
+      "rating": "4.6",
+      "reviews": 389
+    },
+    {
+      "id": "ms2",
+      "name": "Litchi Shake",
+      "price": 60,
+      "jumbo": 120,
+      "description": "Juicy lychee blended with cold milk — fragrant, floral and delightful.",
+      "image": "https://images.unsplash.com/photo-1570696516188-ade861b84a49?w=400&q=80",
+      "badge": null,
+      "rating": "4.5",
+      "reviews": 178
+    },
+    {
+      "id": "ms3",
+      "name": "Peach Shake",
+      "price": 60,
+      "jumbo": 120,
+      "description": "Sweet fresh peach blended with creamy milk — delicate, fruity and smooth.",
+      "image": "https://images.unsplash.com/photo-1590502160462-58b41354f588?w=400&q=80",
+      "badge": "Seasonal",
+      "rating": "4.5",
+      "reviews": 156
+    },
+    {
+      "id": "ms4",
+      "name": "Raspberry Shake",
+      "price": 60,
+      "jumbo": 120,
+      "description": "Tangy raspberry blended into a thick milkshake — bold, pink and irresistible.",
+      "image": "https://images.unsplash.com/photo-1553949345-eb786bb3f7ba?w=400&q=80",
+      "badge": null,
+      "rating": "4.4",
+      "reviews": 145
+    },
+    {
+      "id": "ms5",
+      "name": "Chocolate Shake",
+      "price": 60,
+      "jumbo": 120,
+      "description": "Rich chocolate blended with creamy milk — thick, indulgent and satisfying.",
+      "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&q=80",
+      "badge": "Bestseller",
+      "rating": "4.7",
+      "reviews": 512
+    },
+    {
+      "id": "ms6",
+      "name": "Blue Berry Shake",
+      "price": 70,
+      "jumbo": 120,
+      "description": "Antioxidant-rich blueberries swirled into a creamy shake — beautiful and bold.",
+      "image": "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=400&q=80",
+      "badge": null,
+      "rating": "4.5",
+      "reviews": 234
+    },
+    {
+      "id": "ms7",
+      "name": "Black Currant Shake",
+      "price": 70,
+      "jumbo": 120,
+      "description": "Deep purple black currant blended smooth — tart, fruity and unique.",
+      "image": "https://images.unsplash.com/photo-1425934398893-310a009a77f9?w=400&q=80",
+      "badge": null,
+      "rating": "4.4",
+      "reviews": 156
+    },
+    {
+      "id": "ms8",
+      "name": "Butterscotch Shake",
+      "price": 70,
+      "jumbo": 140,
+      "description": "Rich butterscotch with chilled milk and cream — sweet, buttery and indulgent.",
+      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&q=80",
+      "badge": null,
+      "rating": "4.5",
+      "reviews": 198
+    },
+    {
+      "id": "ms9",
+      "name": "Malai Pista Shake",
+      "price": 70,
+      "jumbo": 140,
+      "description": "Premium pistachio blended with malai and milk — velvety, nutty and rich.",
+      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80",
+      "badge": "Premium",
+      "rating": "4.6",
+      "reviews": 187
+    },
+    {
+      "id": "ms10",
+      "name": "Mango Shake",
+      "price": 60,
+      "jumbo": 120,
+      "description": "Pure Alphonso mango purée blended with chilled milk — the king of summer.",
+      "image": "https://images.unsplash.com/photo-1553531384-cc64ac80f931?w=400&q=80",
+      "badge": "Seasonal",
+      "rating": "4.8",
+      "reviews": 423
+    },
+    {
+      "id": "ms11",
+      "name": "Badam Shake",
+      "price": 80,
+      "jumbo": 150,
+      "description": "Almond shake with saffron and cardamom — the classic Hyderabadi health shake.",
+      "image": "https://images.unsplash.com/photo-1508061942289-f7e296b5fe24?w=400&q=80",
+      "badge": "Royal",
+      "rating": "4.7",
+      "reviews": 298
+    },
+    {
+      "id": "ms12",
+      "name": "Mango Malai Shake",
+      "price": 80,
+      "jumbo": 150,
+      "description": "Thick mango shake swirled with fresh malai — indulgent and irresistible.",
+      "image": "https://images.unsplash.com/photo-1571575173927-f83b85e7c9e8?w=400&q=80",
+      "badge": "Fan Fav",
+      "rating": "4.8",
+      "reviews": 312
+    },
+    {
+      "id": "ms13",
+      "name": "London Special Shake",
+      "price": 100,
+      "jumbo": 180,
+      "description": "Our London special — a premium blend of exotic fruits with cream and ice cream.",
+      "image": "https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=400&q=80",
+      "badge": "Special",
+      "rating": "4.7",
+      "reviews": 234
+    },
+    {
+      "id": "ms14",
+      "name": "Royal Special Shake",
+      "price": 100,
+      "jumbo": 180,
+      "description": "Our signature royal shake — a secret blend of premium ingredients.",
+      "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80",
+      "badge": "Signature",
+      "rating": "4.9",
+      "reviews": 187
+    },
+    {
+      "id": "ms15",
+      "name": "Oreo Shake",
+      "price": 70,
+      "jumbo": 140,
+      "description": "Blended Oreo cookies with creamy vanilla milk — thick and addictive.",
+      "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80",
+      "badge": null,
+      "rating": "4.6",
+      "reviews": 312
+    },
+    {
+      "id": "ms16",
+      "name": "Butter Scotch Shake",
+      "price": 70,
+      "jumbo": 140,
+      "description": "Classic butterscotch milkshake — caramel-sweet, creamy and comforting.",
+      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&q=80",
+      "badge": null,
+      "rating": "4.4",
+      "reviews": 145
+    },
+    {
+      "id": "ms17",
+      "name": "Malai Pista (Large)",
+      "price": 70,
+      "jumbo": 140,
+      "description": "Generous pistachio malai shake with extra dry fruits on top.",
+      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80",
+      "badge": null,
+      "rating": "4.6",
+      "reviews": 156
+    }
+  ],
+  "summerSpecials": [
+    {
+      "id": "ss1",
+      "name": "Lassi (Sweet)",
+      "price": 50,
+      "special": 60,
+      "description": "Classic sweet yoghurt lassi — thick, chilled and traditionally refreshing.",
+      "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&q=80",
+      "badge": null,
+      "rating": "4.5",
+      "reviews": 312
+    },
+    {
+      "id": "ss2",
+      "name": "Falooda",
+      "price": 50,
+      "special": 60,
+      "description": "Royal Hyderabadi dessert drink — rose syrup, vermicelli, sabja seeds and ice cream.",
+      "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400&q=80",
+      "badge": "Must Try",
+      "rating": "4.8",
+      "reviews": 534
+    },
+    {
+      "id": "ss3",
+      "name": "Lassi (Salty)",
+      "price": 40,
+      "special": 50,
+      "description": "Chilled salted yoghurt lassi — savoury, cooling and deeply satisfying.",
+      "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&q=80",
+      "badge": null,
+      "rating": "4.3",
+      "reviews": 198
+    },
+    {
+      "id": "ss4",
+      "name": "Lemon Juice (Sweet)",
+      "price": 50,
+      "special": 60,
+      "description": "Freshly squeezed lemon with sugar — simple, classic and perfectly refreshing.",
+      "image": "https://images.unsplash.com/photo-1613478223719-2ab802602423?w=400&q=80",
+      "badge": null,
+      "rating": "4.4",
+      "reviews": 267
+    },
+    {
+      "id": "ss5",
+      "name": "Lemon Juice (Salty)",
+      "price": 50,
+      "special": 60,
+      "description": "Fresh lemon with a pinch of rock salt — cooling, tangy and thirst-quenching.",
+      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=80",
+      "badge": null,
+      "rating": "4.3",
+      "reviews": 198
+    },
+    {
+      "id": "ss6",
+      "name": "Lemon Soda (Sweet)",
+      "price": 50,
+      "special": 60,
+      "description": "Fizzy lemon soda with sugar — light, sparkling and refreshingly sweet.",
+      "image": "https://images.unsplash.com/photo-1499638673689-79a0b0c62e01?w=400&q=80",
+      "badge": null,
+      "rating": "4.4",
+      "reviews": 223
+    },
+    {
+      "id": "ss7",
+      "name": "Lemon Soda (Salty)",
+      "price": 50,
+      "special": 60,
+      "description": "Sparkling lemon soda with salt — the classic Hyderabadi summer refresher.",
+      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=80",
+      "badge": null,
+      "rating": "4.3",
+      "reviews": 189
+    },
+    {
+      "id": "ss8",
+      "name": "Lemon Soda (Sweet & Salty)",
+      "price": 50,
+      "special": 60,
+      "description": "Best of both — the perfect balance of sweet and salty fizzy lemon.",
+      "image": "https://images.unsplash.com/photo-1499638673689-79a0b0c62e01?w=400&q=80",
+      "badge": "Popular",
+      "rating": "4.6",
+      "reviews": 312
+    },
+    {
+      "id": "ss9",
+      "name": "Abshola (Raw Mango Juice)",
+      "price": 50,
+      "special": 60,
+      "description": "Traditional raw mango cooler with spices — the ultimate summer thirst-quencher.",
+      "image": "https://images.unsplash.com/photo-1553531384-cc64ac80f931?w=400&q=80",
+      "badge": "Seasonal",
+      "rating": "4.6",
+      "reviews": 213
+    },
+    {
+      "id": "ss10",
+      "name": "Mango Lassi",
+      "price": 60,
+      "special": 70,
+      "description": "Thick Alphonso mango with fresh yoghurt — creamy, tangy and satisfying.",
+      "image": "https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=400&q=80",
+      "badge": "Summer Fav",
+      "rating": "4.7",
+      "reviews": 387
+    },
+    {
+      "id": "ss11",
+      "name": "Strawberry Lassi",
+      "price": 60,
+      "special": 70,
+      "description": "Fresh strawberry pulp blended with creamy yoghurt — vibrant pink and tangy.",
+      "image": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=400&q=80",
+      "badge": null,
+      "rating": "4.5",
+      "reviews": 178
+    },
+    {
+      "id": "ss12",
+      "name": "Chocolate Lassi",
+      "price": 60,
+      "special": 70,
+      "description": "Chocolate syrup swirled into thick chilled yoghurt — an indulgent twist.",
+      "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&q=80",
+      "badge": null,
+      "rating": "4.4",
+      "reviews": 134
+    }
+  ],
+  "punchShots": [
+    {
+      "id": "ps1",
+      "name": "Royal Spl. Punch",
+      "price": 130,
+      "description": "Our signature royal punch — layered exotic fruits with a secret house blend.",
+      "image": "https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400&q=80",
+      "badge": "Signature",
+      "rating": "4.9",
+      "reviews": 289
+    },
+    {
+      "id": "ps2",
+      "name": "Alam Panah Punch",
+      "price": 170,
+      "description": "A legendary Hyderabadi punch — bold, complex and utterly unforgettable.",
+      "image": "https://images.unsplash.com/photo-1497534446932-c925b458314e?w=400&q=80",
+      "badge": "Premium",
+      "rating": "4.8",
+      "reviews": 198
+    },
+    {
+      "id": "ps3",
+      "name": "Mango Punch",
+      "price": 130,
+      "description": "Fresh mango with tropical fruits layered into a vibrant punch.",
+      "image": "https://images.unsplash.com/photo-1553531384-cc64ac80f931?w=400&q=80",
+      "badge": null,
+      "rating": "4.6",
+      "reviews": 245
+    },
+    {
+      "id": "ps4",
+      "name": "Pista Punch",
+      "price": 140,
+      "description": "Premium pistachio punch — velvety, nutty and beautifully green.",
+      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80",
+      "badge": null,
+      "rating": "4.5",
+      "reviews": 134
+    },
+    {
+      "id": "ps5",
+      "name": "Strawberry Punch",
+      "price": 130,
+      "description": "Fresh strawberry punch with cream and exotic fruit layers.",
+      "image": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=400&q=80",
+      "badge": null,
+      "rating": "4.6",
+      "reviews": 178
+    },
+    {
+      "id": "ps6",
+      "name": "Custard Punch",
+      "price": 120,
+      "description": "Smooth custard with seasonal fruits blended into a thick, dreamy punch.",
+      "image": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400&q=80",
+      "badge": null,
+      "rating": "4.6",
+      "reviews": 167
+    },
+    {
+      "id": "ps7",
+      "name": "Dry Fruit Punch",
+      "price": 170,
+      "description": "Premium dry fruits blended into a thick, luxurious punch — pure indulgence.",
+      "image": "https://images.unsplash.com/photo-1508061942289-f7e296b5fe24?w=400&q=80",
+      "badge": "Premium",
+      "rating": "4.7",
+      "reviews": 167
+    },
+    {
+      "id": "ps8",
+      "name": "Oreo Shots",
+      "price": 120,
+      "description": "Chilled Oreo cookie shots — creamy, crunchy and absolutely addictive.",
+      "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80",
+      "badge": null,
+      "rating": "4.6",
+      "reviews": 312
+    }
+  ],
+  "snacks": [
+    {
+      "id": "sn1",
+      "name": "Chicken Shawarma (Rumali/Samoli)",
+      "price": 70,
+      "description": "Juicy spiced chicken rolled in rumali or samoli bread with garlic sauce.",
+      "image": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&q=80",
+      "badge": "Popular",
+      "rating": "4.7",
+      "reviews": 389
+    },
+    {
+      "id": "sn2",
+      "name": "Spl. Chicken Shawarma (Rumali/Samoli)",
+      "price": 90,
+      "description": "Premium shawarma — extra chicken, extra sauce and loaded with flavour.",
+      "image": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&q=80",
+      "badge": "Chef's Pick",
+      "rating": "4.8",
+      "reviews": 298
+    },
+    {
+      "id": "sn3",
+      "name": "Veg. Sandwich",
+      "price": 40,
+      "description": "Fresh vegetables layered in soft bread with chutney — light and satisfying.",
+      "image": "https://images.unsplash.com/photo-1481070414801-51fd732d7184?w=400&q=80",
+      "badge": "Veg",
+      "rating": "4.2",
+      "reviews": 134
+    },
+    {
+      "id": "sn4",
+      "name": "Veg. Grilled Sandwich (Mozzarella)",
+      "price": 50,
+      "description": "Grilled sandwich with veggies and melted mozzarella cheese — crispy and gooey.",
+      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&q=80",
+      "badge": "Veg",
+      "rating": "4.4",
+      "reviews": 198
+    },
+    {
+      "id": "sn5",
+      "name": "Veg. Paneer Grill Sandwich",
+      "price": 50,
+      "description": "Crispy grilled sandwich stuffed with spiced paneer and fresh vegetables.",
+      "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80",
+      "badge": "Veg",
+      "rating": "4.4",
+      "reviews": 178
+    },
+    {
+      "id": "sn6",
+      "name": "Veg. Burger",
+      "price": 40,
+      "description": "Classic veggie burger with fresh toppings and signature sauce.",
+      "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&q=80",
+      "badge": "Veg",
+      "rating": "4.3",
+      "reviews": 167
+    },
+    {
+      "id": "sn7",
+      "name": "Veg. Pizza",
+      "price": 80,
+      "description": "Thin-crust pizza loaded with fresh vegetables and mozzarella cheese.",
+      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&q=80",
+      "badge": "Veg",
+      "rating": "4.4",
+      "reviews": 198
+    },
+    {
+      "id": "sn8",
+      "name": "Paneer Pizza",
+      "price": 90,
+      "description": "Thin-crust pizza topped with spiced paneer cubes and mozzarella cheese.",
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80",
+      "badge": "Veg",
+      "rating": "4.5",
+      "reviews": 178
+    },
+    {
+      "id": "sn9",
+      "name": "Chicken Sandwich",
+      "price": 40,
+      "description": "Tender chicken with fresh veggies in soft bread — quick and delicious.",
+      "image": "https://images.unsplash.com/photo-1481070414801-51fd732d7184?w=400&q=80",
+      "badge": null,
+      "rating": "4.4",
+      "reviews": 198
+    },
+    {
+      "id": "sn10",
+      "name": "Chicken Grilled Sandwich (Mozzarella)",
+      "price": 50,
+      "description": "Grilled chicken sandwich with melted mozzarella — smoky, crispy and hearty.",
+      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&q=80",
+      "badge": null,
+      "rating": "4.6",
+      "reviews": 223
+    },
+    {
+      "id": "sn11",
+      "name": "Chicken Burger",
+      "price": 50,
+      "description": "Classic crispy chicken burger with lettuce, tomato and signature sauce.",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80",
+      "badge": null,
+      "rating": "4.5",
+      "reviews": 234
+    },
+    {
+      "id": "sn12",
+      "name": "Chicken Paneer",
+      "price": 110,
+      "description": "Grilled chicken and paneer together — a unique and satisfying combination.",
+      "image": "https://images.unsplash.com/photo-1432139509613-5c4255815697?w=400&q=80",
+      "badge": null,
+      "rating": "4.5",
+      "reviews": 145
+    },
+    {
+      "id": "sn13",
+      "name": "Chicken Pizza",
+      "price": 100,
+      "description": "Thin-crust pizza topped with spiced chicken, peppers and stretchy mozzarella.",
+      "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=80",
+      "badge": null,
+      "rating": "4.6",
+      "reviews": 178
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Urban Fork — Restaurant & Fresh Juices",
+  "short_name": "Urban Fork",
+  "description": "Urban Fork Dining & Royal Fresh Fruit Juices — Live Menu and Table Ordering",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1f0f",
+  "theme_color": "#f4a017",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
