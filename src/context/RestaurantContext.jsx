@@ -66,64 +66,38 @@ export function RestaurantProvider({ children }) {
         }
       }
 
-      // Case B: Outlet code only (Takeaway / Direct Menu)
+      // Case B: Outlet code only (Takeaway / Direct Menu - e.g. /c/:outletCode)
       if (activeOutletCode) {
-        const { data: outletData, error: oError } = await supabase
-          .from('outlets')
-          .select('id, name, code, phone, email, address, currency, social_links, logo_url, customer_website_enabled, website_url, organization_id, organizations(name, legal_entity_name)')
-          .eq('code', activeOutletCode.toLowerCase())
-          .eq('status', 'ACTIVE')
-          .single();
+        const { data: outletRes, error: oError } = await supabase.rpc('get_public_website_outlet', {
+          p_outlet_code: activeOutletCode,
+        });
 
-        if (!oError && outletData) {
-          const formattedOutlet = {
-            id: outletData.id,
-            name: outletData.name,
-            organization_name: outletData.organizations?.name || outletData.name,
-            code: outletData.code,
-            phone: outletData.phone,
-            email: outletData.email,
-            address: outletData.address,
-            currency: outletData.currency || 'INR',
-            social_links: outletData.social_links || {},
-            logo_url: outletData.logo_url || null,
-          };
+        if (!oError && outletRes?.success && outletRes.outlet) {
+          const formattedOutlet = outletRes.outlet;
           setOutlet(formattedOutlet);
           setTable(null);
           setTableToken(null);
           sessionStorage.setItem('customer_outlet_code', formattedOutlet.code);
+          sessionStorage.removeItem('customer_table_token');
           fetchOffers(formattedOutlet.id);
           setLoading(false);
           return;
         }
       }
 
-      // Case C: General Website visitor (No QR parameters) -> Fetch primary active outlet
-      const { data: defaultOutlet, error: dError } = await supabase
-        .from('outlets')
-        .select('id, name, code, phone, email, address, currency, social_links, logo_url, customer_website_enabled, website_url, organization_id, organizations(name, legal_entity_name)')
-        .eq('status', 'ACTIVE')
-        .order('created_at', { ascending: true })
-        .limit(1)
-        .single();
+      // Case C: Standalone Root Website (e.g. /) -> Resolve primary website outlet
+      const { data: rootRes, error: rError } = await supabase.rpc('get_public_website_outlet', {});
 
-      if (!dError && defaultOutlet) {
-        const formattedOutlet = {
-          id: defaultOutlet.id,
-          name: defaultOutlet.name,
-          organization_name: defaultOutlet.organizations?.name || defaultOutlet.name,
-          code: defaultOutlet.code,
-          phone: defaultOutlet.phone,
-          email: defaultOutlet.email,
-          address: defaultOutlet.address,
-          currency: defaultOutlet.currency || 'INR',
-          social_links: defaultOutlet.social_links || {},
-          logo_url: defaultOutlet.logo_url || null,
-        };
+      if (!rError && rootRes?.success && rootRes.outlet) {
+        const formattedOutlet = rootRes.outlet;
         setOutlet(formattedOutlet);
         setTable(null);
         setTableToken(null);
+        sessionStorage.setItem('customer_outlet_code', formattedOutlet.code);
+        sessionStorage.removeItem('customer_table_token');
         fetchOffers(formattedOutlet.id);
+      } else {
+        setError(rootRes?.error || rError?.message || 'Failed to resolve restaurant outlet');
       }
     } catch (err) {
       console.warn('Error loading restaurant context:', err);
