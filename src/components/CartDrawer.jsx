@@ -133,9 +133,44 @@ export default function CartDrawer() {
       return;
     }
 
+    // CRITICAL: Take an immutable snapshot of the current cart items RIGHT NOW,
+    // before any async call or state mutation. This prevents stale React state
+    // or stale localStorage items from being submitted if state updates mid-flight.
+    const cartSnapshot = items.map((item) => ({
+      menu_item_id: item.id,
+      variant_id: item.variant_id || undefined,
+      modifiers: item.modifiers
+        ? item.modifiers.map((m) => ({ modifier_id: m.id || m.modifier_id }))
+        : [],
+      quantity: item.quantity,
+      notes: item.notes || undefined,
+    }));
+
+    if (cartSnapshot.length === 0) {
+      setOrderError('Your cart is empty.');
+      return;
+    }
+
+    // Validate snapshot: every item must have a menu_item_id and quantity >= 1
+    for (const si of cartSnapshot) {
+      if (!si.menu_item_id) {
+        setOrderError('Cart contains an invalid item. Please clear the cart and try again.');
+        return;
+      }
+      if (!si.quantity || si.quantity < 1) {
+        setOrderError('Cart contains an item with invalid quantity. Please review your cart.');
+        return;
+      }
+    }
+
     try {
       setIsPlacingOrder(true);
       setOrderError(null);
+
+      // Clear localStorage immediately and synchronously BEFORE calling the RPC.
+      // This prevents stale cart data from leaking into a subsequent order if the
+      // browser crashes or reloads between the RPC call and the React state update.
+      try { localStorage.removeItem('bt_cart'); } catch { /* ignore */ }
 
       const orderPayload = {
         outlet_id: outletId,
@@ -144,13 +179,8 @@ export default function CartDrawer() {
         customer_phone: customerPhone ? customerPhone.trim().replace(/[^0-9]/g, '') : undefined,
         customer_name: customerName.trim() || undefined,
         coupon_code: appliedCoupon ? appliedCoupon.code : undefined,
-        items: items.map((item) => ({
-          menu_item_id: item.id,
-          variant_id: item.variant_id || undefined,
-          modifiers: item.modifiers ? item.modifiers.map((m) => ({ modifier_id: m.id || m.modifier_id })) : [],
-          quantity: item.quantity,
-          notes: item.notes || undefined,
-        })),
+        // Use the immutable snapshot — never use live React state here
+        items: cartSnapshot,
       };
 
       const { data, error } = await supabase.rpc('create_customer_order', {
@@ -164,9 +194,12 @@ export default function CartDrawer() {
       sessionStorage.setItem('active_customer_order_id', data.order_id);
       sessionStorage.setItem('active_customer_order_oat', data.oat);
 
-      setPlacedOrder(data);
+      // Clear React cart state (localStorage already cleared above)
       clearCart();
+      setPlacedOrder(data);
     } catch (err) {
+      // On failure, restore localStorage so user can retry with the same cart
+      try { localStorage.setItem('bt_cart', JSON.stringify(items)); } catch { /* ignore */ }
       setOrderError(err.message || 'Failed to submit order to restaurant.');
     } finally {
       setIsPlacingOrder(false);
