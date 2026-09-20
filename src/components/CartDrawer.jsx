@@ -136,11 +136,13 @@ export default function CartDrawer() {
     // CRITICAL: Take an immutable snapshot of the current cart items RIGHT NOW,
     // before any async call or state mutation. This prevents stale React state
     // or stale localStorage items from being submitted if state updates mid-flight.
+    // NOTE: item.modifiers is the menu catalog available add-on list, NOT customer-selected
+    // modifiers. Modifiers must only be submitted if explicitly selected by the user.
     const cartSnapshot = items.map((item) => ({
       menu_item_id: item.id,
       variant_id: item.variant_id || undefined,
-      modifiers: item.modifiers
-        ? item.modifiers.map((m) => ({ modifier_id: m.id || m.modifier_id }))
+      modifiers: Array.isArray(item.selectedModifiers) && item.selectedModifiers.length > 0
+        ? item.selectedModifiers.map((m) => ({ modifier_id: m.id || m.modifier_id }))
         : [],
       quantity: item.quantity,
       notes: item.notes || undefined,
