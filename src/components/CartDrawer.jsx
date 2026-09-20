@@ -22,6 +22,15 @@ export default function CartDrawer() {
   const [placedOrder, setPlacedOrder] = useState(null);
   const [liveOrderStatus, setLiveOrderStatus] = useState(null);
 
+  // Active order object with strict order_id guard against cross-order stale state leakage
+  const activeOrder = useMemo(() => {
+    if (!placedOrder) return null;
+    if (liveOrderStatus?.order_id === placedOrder.order_id) {
+      return { ...placedOrder, ...liveOrderStatus };
+    }
+    return placedOrder;
+  }, [placedOrder, liveOrderStatus]);
+
   // Check for active order in session
   useEffect(() => {
     const savedOrderId = sessionStorage.getItem('active_customer_order_id');
@@ -39,7 +48,13 @@ export default function CartDrawer() {
         p_oat: oat,
       });
       if (!error && data?.success) {
-        setLiveOrderStatus(data);
+        // Discard any status update that belongs to a different order than the current active placed order
+        setLiveOrderStatus((prev) => {
+          if (placedOrder?.order_id && data.order_id !== placedOrder.order_id) {
+            return prev;
+          }
+          return data;
+        });
       }
     } catch {
       // Ignore background errors
@@ -76,7 +91,7 @@ export default function CartDrawer() {
       supabase.removeChannel(channel);
       clearInterval(interval);
     };
-  }, [placedOrder, liveOrderStatus?.order_id]);
+  }, [placedOrder?.order_id, placedOrder?.oat, liveOrderStatus?.order_id]);
 
   // Coupon handling
   const handleApplyCoupon = () => {
@@ -198,6 +213,7 @@ export default function CartDrawer() {
 
       // Clear React cart state (localStorage already cleared above)
       clearCart();
+      setLiveOrderStatus(data);
       setPlacedOrder(data);
     } catch (err) {
       // On failure, restore localStorage so user can retry with the same cart
@@ -240,7 +256,7 @@ export default function CartDrawer() {
                 )}
               </div>
               <div className="flex items-center gap-2">
-                {items.length > 0 && !confirmClear && !placedOrder && (
+                {items.length > 0 && !confirmClear && !activeOrder && (
                   <button
                     onClick={() => setConfirmClear(true)}
                     className="text-red-400/60 hover:text-red-400 text-xs font-heading transition-colors px-2 py-1 rounded-lg"
@@ -279,7 +295,7 @@ export default function CartDrawer() {
             {/* Content Area */}
             <div className="flex-1 overflow-y-auto px-5 py-4 space-y-4">
               {/* STATE 1: ACTIVE ORDER PLACED CONFIRMATION */}
-              {placedOrder ? (
+              {activeOrder ? (
                 <div className="text-center py-6 space-y-4">
                   <div className="w-16 h-16 rounded-full bg-green-500/20 text-green-400 border border-green-500/30 flex items-center justify-center mx-auto text-3xl animate-pulse">
                     ✓
@@ -287,7 +303,7 @@ export default function CartDrawer() {
                   <div>
                     <h3 className="text-lg font-heading font-bold text-cream">Order Received!</h3>
                     <p className="text-amber-primary font-mono text-sm font-bold mt-0.5">
-                      #{placedOrder.order_number}
+                      #{activeOrder.order_number}
                     </p>
                   </div>
 
@@ -295,19 +311,19 @@ export default function CartDrawer() {
                     <div className="flex items-center justify-between text-xs">
                       <span className="text-cream/60">Status</span>
                       <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40">
-                        {liveOrderStatus?.order_status || placedOrder.order_status || 'PENDING_VERIFICATION'}
+                        {activeOrder.order_status || 'PENDING_VERIFICATION'}
                       </span>
                     </div>
                     <div className="flex items-center justify-between text-xs">
                       <span className="text-cream/60">Destination</span>
                       <span className="text-cream font-medium">
-                        {isTableSession ? `Table ${table.table_number}` : 'Takeaway'}
+                        {isTableSession ? `Table ${table?.table_number || activeOrder.table_number || ''}` : 'Takeaway'}
                       </span>
                     </div>
                     <div className="flex items-center justify-between text-xs">
                       <span className="text-cream/60">Net Amount</span>
                       <span className="text-amber-primary font-bold">
-                        Rs.{liveOrderStatus?.net_amount || placedOrder.net_amount}
+                        Rs.{activeOrder.net_amount}
                       </span>
                     </div>
                   </div>
@@ -319,6 +335,11 @@ export default function CartDrawer() {
                   <button
                     onClick={() => {
                       setPlacedOrder(null);
+                      setLiveOrderStatus(null);
+                      try {
+                        sessionStorage.removeItem('active_customer_order_id');
+                        sessionStorage.removeItem('active_customer_order_oat');
+                      } catch { /* ignore */ }
                       closeCart();
                     }}
                     className="w-full py-3 rounded-xl bg-amber-primary text-dark-900 font-heading font-bold text-sm hover:brightness-110 transition"
@@ -441,7 +462,7 @@ export default function CartDrawer() {
             </div>
 
             {/* Footer / Place Order Action */}
-            {items.length > 0 && !placedOrder && (
+            {items.length > 0 && !activeOrder && (
               <div className="px-5 py-4 border-t border-cream/10 space-y-3 bg-dark-900/90">
                 <div className="space-y-1 text-xs">
                   <div className="flex justify-between text-cream/60 font-body">
